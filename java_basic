@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Student{
+     int id;
+     String s_name;
+     int  age;   // this is the attribute of java
+     Scanner scanner = new Scanner(System.in);
+     //member functions
+     public void accept(){
+          System.out.println("Enter the student id ");
+          id=scanner.nextInt();
+           System.out.println("Enter the student name ");
+          s_name=scanner.next();
+           System.out.println("enter student age ");
+           age=scanner.nextInt();
+     }
+    public void display(){
+    System.out.println("Student name : " +s_name);
+    System.out.println("Student id : " +id);
+    System.out.println("Student age : " +age);
+    }
+}     
+
+public class Main{
+    public static void main(String[] args){
+          // creating object for the class
+          Student student = new Student();
+          student.accept();
+          student.display();
+               }
+}
+
